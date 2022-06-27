@@ -69,5 +69,6 @@
     }
     .nav{
         padding-bottom: 15%;
+        list-style-type: none;
     }
 </style>
