@@ -2,13 +2,35 @@
     <div class="main_sidebar">
         <p>{{title}}</p>
         <div class="sidebar_header">
-            <img src="" alt="LOGO">
+            <img class="photo" src="@/assets/img/im.jpg" alt="img">
         </div>
         <div class="sidebar_navbar">
-            <ul class="nav">
-                <li>Portfolio</li>
-                <li>Skils</li>
-                <li>Contacts</li>
+            <ul>
+                <li class="nav">Contacts
+                    <ul>
+                        <li>+38 066 944 74 85</li>
+                        <li>matushok12@gmail.com</li>
+                    </ul>
+                </li>
+
+                <li class="nav">Portfolio
+                    <ul>
+                        <li>Trained in Cyber Police</li>
+                    </ul>
+                </li>
+
+                <li class="nav">Skils
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>GIT</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>PHP</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -41,5 +63,11 @@
         display: flex;
         flex-direction: column;
         padding: 1%;
+    }
+    .photo{
+        width: 275px;
+    }
+    .nav{
+        padding-bottom: 15%;
     }
 </style>
