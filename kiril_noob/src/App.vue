@@ -1,27 +1,35 @@
 <template>
-    <div>
-        <h1>Должно что-то отображаться</h1>
-    </div>
+	<div id="app" class="main_of_main">
+		<SideBar/>
+        <Content/>
+	</div>
 </template>
 
 <script>
+	import SideBar from "./components/SideBar.vue";
+	import Content from "./components/Content.vue";
 
-
-export default {
-  name: 'App',
-  components: {
-  
-  }
-}
+	export default {
+		name: "App",
+		components: {
+			SideBar,
+			Content,
+		},
+	};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	#app {
+		font-family: Avenir, Helvetica, Arial, sans-serif;
+	}
+    .main_of_main{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        border: solid 1px gray;
+        padding: 0 5%;
+
+        display: flex;
+        flex-direction: row;
+    }
 </style>
