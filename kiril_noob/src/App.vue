@@ -1,5 +1,7 @@
 <template>
-
+    <div>
+        <h1>Должно что-то отображаться</h1>
+    </div>
 </template>
 
 <script>
