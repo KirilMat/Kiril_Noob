@@ -91,7 +91,7 @@
 		padding: 1%;
 	}
 	.photo {
-		width: 275px;
+		width: 100%;
 	}
 	/* .nav {
 		padding-bottom: 15%;
@@ -112,6 +112,34 @@
         cursor: pointer;
         color: white;
     }
+	@media (min-width: 992px) and (max-width: 1199px) {
+			.main_sidebar {
+        width: 35%; 
+				}
+				.realNav li {
+		font-size: 17px;
+			}};
+	@media (min-width: 768px) and (max-width: 991px) {
+			.main_sidebar {
+        width: 35%; 
+				}
+			.realNav li {
+		font-size: 15px;
+			}};
+	@media (min-width: 480px) and (max-width: 767px) {
+			.main_sidebar {
+        width: 35%; 
+				}
+			.realNav li {
+		font-size: 13px;
+			}};
+	@media (max-width: 479px) {
+			.main_sidebar {
+        width: 35%; 
+				}
+			.realNav li {
+		font-size: 12px;
+			}};
     .realNav li:hover{
         background-color: rgb(228, 228, 0);
         color: white;

@@ -52,9 +52,6 @@
 		background-color: rgb(219, 219, 219);
 		min-height: 600px;
 	}
-	.about_me {
-		width: 40%;
-	}
 
 .bounce-enter-active {
   animation: bounce-in 0.5s;
@@ -73,5 +70,27 @@
     transform: scale(1);
   }
 }
-
+	@media (min-width: 992px) and (max-width: 1199px) {
+			.main_content {
+        width: 65%;
+		font-size: 16px;
+				}};
+	@media (min-width: 768px) and (max-width: 991px) {
+			.main_content {
+        width: 65%;
+		font-size: 14px; 
+				}};
+	@media (min-width: 480px) and (max-width: 767px) {
+			.main_content {
+        width: 65%;
+		font-size: 12px;
+				}};
+	@media (max-width: 479px) {
+			.main_content {
+        width: 65%;
+		font-size: 10px;
+				}};
+	.about_me {
+		width: 40%;
+	}
 </style>
