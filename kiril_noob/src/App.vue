@@ -1,5 +1,5 @@
 <template>
-	<div id="app" class="main_of_main">
+<div id="app" class="main_of_main">
 		<SideBar/>
         <Content/>
 	</div>
@@ -19,16 +19,17 @@
 </script>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500&family=Montserrat:wght@100&display=swap');
 	#app {
-		font-family: Avenir, Helvetica, Arial, sans-serif;
+		font-family: 'El Messiri', sans-serif;
 	}
     .main_of_main{
         width: 100%;
         max-width: 1440px;
         margin: 0 auto;
-        border: solid 1px gray;
+        /* border: solid 1px gray; */
         padding: 0 5%;
-
+		
         display: flex;
         flex-direction: row;
     }

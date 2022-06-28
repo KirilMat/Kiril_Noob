@@ -1,6 +1,18 @@
 <template>
 	<div class="Item Skils">
-		<h1>Скилы, скоро будут отображены</h1>
+		<li class="nav">
+			Skils
+				<ul>
+					<li>Python</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>GIT</li>
+					<li>C++</li>
+					<li>C#</li>
+					<li>PHP</li>
+				</ul>
+		</li>
 	</div>
 </template>
 
@@ -10,4 +22,9 @@
 	};
 </script>
 
-<style></style>
+<style>
+.nav {
+		padding-bottom: 15%;
+		list-style-type: none;
+	}
+</style>

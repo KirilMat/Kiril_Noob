@@ -6,22 +6,22 @@
 		</div>
 		<div class="sidebar_navbar">
 			<ul>
-				<li class="nav">
+				<!-- <li class="nav">
 					Contacts
 					<ul>
 						<li>+38 066 944 74 85</li>
 						<li>matushok12@gmail.com</li>
 					</ul>
-				</li>
+				</li> -->
 
-				<li class="nav">
+				<!-- <li class="nav">
 					Portfolio
 					<ul>
 						<li>Trained in Cyber Police</li>
 					</ul>
-				</li>
+				</li> -->
 
-				<li class="nav">
+				<!-- <li class="nav">
 					Skils
 					<ul>
 						<li>Python</li>
@@ -33,12 +33,13 @@
 						<li>C#</li>
 						<li>PHP</li>
 					</ul>
-				</li>
+				</li> -->
 			</ul>
 			<ul class="realNav">
+                <li @click="showContent = 0" :class="{active:showContent === 0}">About</li>
 				<li @click="byContacts" :class="{active:showContent === 1}">Contacts</li>
-				<li @click="byAbout" :class="{active:showContent === 0}">About</li>
 				<li @click="bySkils" :class="{active:showContent === 2}">Skils</li>
+                <li @click="byPortfolio" :class="{active:showContent === 3}">Portfolio</li>
 			</ul>
 		</div>
 	</div>
@@ -66,11 +67,11 @@
 				this.showContent = 1;
                 console.log(this.showContent);
 			},
-			byAbout() {
-				this.showContent = 0;
-			},
 			bySkils() {
 				this.showContent = 2;
+			},
+            byPortfolio() {
+				this.showContent = 3;
 			},
 		},
 		watch: {},
@@ -83,7 +84,7 @@
 <style scoped>
 	.main_sidebar {
 		width: 20%;
-		background-color: pink;
+		background: linear-gradient(180deg, rgba(0,212,255,1) 0%, rgba(15,15,177,1) 85%, rgba(2,0,36,1) 95%);
 		height: auto;
 		display: flex;
 		flex-direction: column;
@@ -92,12 +93,13 @@
 	.photo {
 		width: 275px;
 	}
-	.nav {
+	/* .nav {
 		padding-bottom: 15%;
 		list-style-type: none;
-	}
+	} */
     .realNav{
         list-style-type: none;
+		padding-inline-start: 0px;
     }
     .realNav li{
         font-size: 24px;
@@ -108,13 +110,14 @@
         text-align: center;
         font-weight: bolder;
         cursor: pointer;
+        color: white;
     }
     .realNav li:hover{
-        background-color: aquamarine;
+        background-color: rgb(228, 228, 0);
         color: white;
     }
     .active{
-        background-color: rgb(133, 133, 255);
+        background-color: rgb(228, 228, 0);
         color: white;
     }
 </style>

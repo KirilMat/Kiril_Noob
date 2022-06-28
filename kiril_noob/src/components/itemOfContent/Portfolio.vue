@@ -1,18 +1,17 @@
 <template>
-    <div class="Item Contacts">
+    <div class="Item Portfolio">
         <li class="nav">
-			Contacts
+			Portfolio
 				<ul>
-					<li>+38 066 944 74 85</li>
-					<li>matushok12@gmail.com</li>
+					<li>Trained in Cyber Police</li>
 				</ul>
-	</li>
+		</li>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Contacts-page",
+    name: "Portfolio-page",
 }
 </script>
 
